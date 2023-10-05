@@ -55,6 +55,8 @@ https://www.youtube.com/watch?v=24GeBn2PVUU -->
 
 9. Creating Raw CMake project
 Learning CMake: https://www.youtube.com/watch?v=mKZ-i-UfGgQ
+https://codevion.github.io/#!cpp/cmake.md
+https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
 Older yt video:
 https://www.youtube.com/watch?v=nlKcXPUJGwA&list=PLalVdRk2RC6o5GHu618ARWh0VO0bFlif4&index=1&t=0s
@@ -62,14 +64,15 @@ https://www.youtube.com/watch?v=nlKcXPUJGwA&list=PLalVdRk2RC6o5GHu618ARWh0VO0bFl
 10. adding OpenGL library to CMake
 https://stackoverflow.com/questions/18647976/missing-opengl-headers-on-mac
 
+11. If you are using the static library version of GLFW, add it and the Cocoa, OpenGL and IOKit frameworks to the project as dependencies. They can all be found in /System/Library/Frameworks.
 https://www.glfw.org/docs/latest/build.html#:~:text=the%20project%20dependencies.-,If%20you%20are%20using%20the%20static%20library%20version%20of%20GLFW%2C%20add,.,-With%20command%2Dline
 
 https://stackoverflow.com/questions/2908640/how-to-add-a-framework-to-cmake
 
 https://stackoverflow.com/questions/57129755/problems-with-cmakelists-txt-for-osx-windows-compilation
+https://stackoverflow.com/q/57129755/9229695
 
-
-11. Failed to create GLFW window?
+12. Failed to create GLFW window?
 glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE); // Mac
 https://stackoverflow.com/questions/66152815/failed-to-create-glfw-window
 https://stackoverflow.com/a/22889120/9229695
