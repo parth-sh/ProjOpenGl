@@ -56,10 +56,12 @@ https://www.youtube.com/watch?v=24GeBn2PVUU -->
 9. Creating Raw CMake project
 Learning CMake: https://www.youtube.com/watch?v=mKZ-i-UfGgQ
 https://codevion.github.io/#!cpp/cmake.md
-https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
 Older yt video:
 https://www.youtube.com/watch?v=nlKcXPUJGwA&list=PLalVdRk2RC6o5GHu618ARWh0VO0bFlif4&index=1&t=0s
+
+Documentation:
+https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
 10. adding OpenGL library to CMake
 https://stackoverflow.com/questions/18647976/missing-opengl-headers-on-mac
