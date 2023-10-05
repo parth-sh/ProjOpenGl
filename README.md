@@ -58,3 +58,18 @@ Learning CMake: https://www.youtube.com/watch?v=mKZ-i-UfGgQ
 
 Older yt video:
 https://www.youtube.com/watch?v=nlKcXPUJGwA&list=PLalVdRk2RC6o5GHu618ARWh0VO0bFlif4&index=1&t=0s
+
+10. adding OpenGL library to CMake
+https://stackoverflow.com/questions/18647976/missing-opengl-headers-on-mac
+
+https://www.glfw.org/docs/latest/build.html#:~:text=the%20project%20dependencies.-,If%20you%20are%20using%20the%20static%20library%20version%20of%20GLFW%2C%20add,.,-With%20command%2Dline
+
+https://stackoverflow.com/questions/2908640/how-to-add-a-framework-to-cmake
+
+https://stackoverflow.com/questions/57129755/problems-with-cmakelists-txt-for-osx-windows-compilation
+
+
+11. Failed to create GLFW window?
+glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE); // Mac
+https://stackoverflow.com/questions/66152815/failed-to-create-glfw-window
+https://stackoverflow.com/a/22889120/9229695
