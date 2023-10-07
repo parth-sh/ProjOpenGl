@@ -5,10 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(hello VERSION 1.0)
 
 add_subdirectory(glfw-3.3.8 glfw)
-# find_library(GLFW libglfw3.a REQUIRED PATHS ${CMAKE_CURRENT_SOURCE_DIR}/glfw-3.3.8/build/src/libglfw3.a)
-# set(GLFW_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/build/glfw-3.3.8/src/libglfw3.a)
-set(GLFW_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/glfw-3.3.8/include)
-set(GLAD_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/glad/include)
+list(APPEND EXTRA_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/glfw-3.3.8/include ${CMAKE_CURRENT_SOURCE_DIR}/glad/include)
 
 find_library(COCOA_LIBRARY Cocoa)
 find_library(OpenGL_LIBRARY OpenGL)
@@ -17,4 +14,4 @@ set(EXTRA_LIBS ${COCOA_LIBRARY} ${OpenGL_LIBRARY} ${IOKIT_LIBRARY})
 
 add_executable(hello main.cpp ${CMAKE_CURRENT_SOURCE_DIR}/glad/src/glad.c)
 target_link_libraries(hello PUBLIC glfw ${EXTRA_LIBS})
-target_include_directories(hello PUBLIC ${GLFW_INCLUDE_DIR} ${GLAD_INCLUDE_DIR})
+target_include_directories(hello PUBLIC ${EXTRA_INCLUDES})
