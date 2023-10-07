@@ -1,10 +1,18 @@
 #include <iostream>
+#include "ProjectConfig.h" // Build header
 #include "glad/glad.h"
 #include "KHR/khrplatform.h"
 #include "GLFW/glfw3.h"
 
-int main()
+int main(int argc, char *argv[])
 {
+
+    if (argc < 2)
+    {
+        std::cout << argv[0] << " Version " << hello_VERSION_MAJOR << "."
+                  << hello_VERSION_MINOR << std::endl;
+    }
+
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
